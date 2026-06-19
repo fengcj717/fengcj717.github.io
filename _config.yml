@@ -1,0 +1,85 @@
+title: 随风的数字花园
+subtitle: 记录、思考、分享
+description: 一个关于阅读、成长、技术和生活的个人博客。
+keywords:
+  - 阅读
+  - 成长
+  - 技术
+  - 生活
+author: 随风
+language: zh-CN
+timezone: Asia/Shanghai
+
+url: https://blackfeng.cn
+root: /
+permalink: posts/:title/
+permalink_defaults: {}
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - undefined/**
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ""
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+  wrap: true
+  hljs: false
+
+default_category: 随笔
+category_map: {}
+tag_map: {}
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+
+per_page: 10
+pagination_dir: page
+theme: next
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub: ""
+  content: true
+  content_limit: false
+  content_limit_delim: " "
+  order_by: -date
+
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+search:
+  path: search.json
+  field: post
+  content: true
+  format: html
+
+deploy: {}
