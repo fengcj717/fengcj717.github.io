@@ -3,5 +3,6 @@ node_modules.incomplete/
 public/
 .deploy_git/
 .DS_Store
+.smbdelete*
 npm-debug.log*
 db.json

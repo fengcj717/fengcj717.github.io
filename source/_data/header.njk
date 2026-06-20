@@ -1,122 +1,143 @@
 {%- if page.path == 'index.html' %}
 <section class="home-shell">
+  <a class="home-notice" href="/services/">
+    <span class="home-notice-label">AI 陪跑</span>
+    <span>面向企业团队提供 AI 场景梳理、方案验证与落地陪跑</span>
+    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </a>
+
   <section class="home-hero">
     <div class="home-copy">
-      <div class="home-kicker">林川的 AI 实践 | AI 方案与技术分享</div>
-      <h1>用 AI 解决真实问题，<br>用技术创造可落地的价值</h1>
-      <p>专注于大模型应用、智能体与数据智能领域的方案设计与工程落地。分享可复用的方法、工具与实践，帮助团队更快构建 AI 能力。</p>
+      <div class="home-kicker">AI SOLUTIONS · ENGINEERING · CONSULTING</div>
+      <h1>让 AI 真正进入<br>你的业务流程</h1>
+      <p>分享 AI 应用、智能体与企业知识库的落地方法，也为团队提供从场景判断、原型验证到工程实施的咨询陪跑。</p>
       <div class="home-actions">
-        <a class="btn" href="/services/">浏览解决方案</a>
-        <a class="btn" href="/archives/">阅读最新文章</a>
+        <a class="btn home-primary" href="/services/">查看企业服务 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="btn home-secondary" href="/archives/">浏览技术文章</a>
+      </div>
+      <div class="home-proof">
+        <span><i class="fa fa-check-circle" aria-hidden="true"></i> 场景梳理</span>
+        <span><i class="fa fa-check-circle" aria-hidden="true"></i> 快速验证</span>
+        <span><i class="fa fa-check-circle" aria-hidden="true"></i> 工程落地</span>
       </div>
     </div>
 
-    <div class="home-hero-visual" aria-hidden="true">
-      <div class="illustration">
-        <div class="panel left"></div>
-        <div class="panel right"></div>
-        <div class="panel bottom"></div>
-        <div class="tile one"></div>
-        <div class="tile two"></div>
-        <div class="tile three"></div>
-        <div class="node-line a"></div>
-        <div class="node-line b"></div>
-        <div class="cube"></div>
+    <div class="home-hero-visual">
+      <img src="/images/ai-hero-v2.png" alt="AI 知识库、数据分析与工作流协同示意图" width="1200" height="658" decoding="async" fetchpriority="high">
+      <div class="visual-caption">
+        <span>AI 实践方向</span>
+        <strong>知识 · 智能体 · 数据</strong>
       </div>
     </div>
   </section>
 
-  <section>
+  <nav class="home-tabs" aria-label="首页内容分类">
+    <a class="active" href="/">首页</a>
+    <a href="/services/">企业 AI</a>
+    <a href="/cases/">项目案例</a>
+    <a href="/tags/">工具与实践</a>
+    <a href="/archives/">全部文章</a>
+    <a class="home-tabs-more" href="/about/">认识作者 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </nav>
+
+  <section class="home-section">
     <div class="section-head">
-      <h2 class="section-title">精选项目</h2>
-      <a href="/cases/">查看全部项目 →</a>
+      <div>
+        <span class="section-eyebrow">SELECTED WORK</span>
+        <h2 class="section-title">精选 AI 方案</h2>
+      </div>
+      <a href="/cases/">查看全部案例 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
     <div class="project-grid">
-      <article class="home-card">
-        <span class="badge">已落地</span>
-        <h3>企业知识库智能问答系统</h3>
-        <p>基于 RAG 与企业知识库构建的问答系统，支持文档权限控制、多源检索与引用通道。</p>
-        <div class="tag-row">
-          <span>RAG</span><span>知识管理</span><span>企业应用</span>
+      <a class="home-card card-blue" href="/cases/">
+        <div class="home-card-top">
+          <span class="project-icon"><i class="fa fa-book-open" aria-hidden="true"></i></span>
+          <span class="badge">已落地</span>
         </div>
-      </article>
-      <article class="home-card">
-        <span class="badge">开发中</span>
-        <h3>AI 智能体平台（Agent Platform）</h3>
-        <p>可视化编排多智能体流程，支持插件扩展、长期记忆与任务调度，让业务流程自动化。</p>
-        <div class="tag-row">
-          <span>Agent</span><span>工作流</span><span>自动化</span>
+        <h3>企业知识库智能问答</h3>
+        <p>围绕真实业务资料搭建可追溯的 RAG 问答系统，支持权限、检索与来源引用。</p>
+        <div class="tag-row"><span>RAG</span><span>知识管理</span><span>企业应用</span></div>
+      </a>
+      <a class="home-card card-violet" href="/cases/">
+        <div class="home-card-top">
+          <span class="project-icon"><i class="fa fa-diagram-project" aria-hidden="true"></i></span>
+          <span class="badge">开发中</span>
         </div>
-      </article>
-      <article class="home-card">
-        <span class="badge">已落地</span>
-        <h3>数据分析与洞察平台</h3>
-        <p>统一接入多源数据，结合 LLM 进行自然语言分析与可视化洞察，辅助业务决策。</p>
-        <div class="tag-row">
-          <span>数据分析</span><span>可视化</span><span>BI</span>
+        <h3>AI 智能体工作平台</h3>
+        <p>把多步骤任务编排成可观察、可复用的智能体流程，连接工具、数据与团队协作。</p>
+        <div class="tag-row"><span>Agent</span><span>工作流</span><span>自动化</span></div>
+      </a>
+      <a class="home-card card-cyan" href="/cases/">
+        <div class="home-card-top">
+          <span class="project-icon"><i class="fa fa-chart-line" aria-hidden="true"></i></span>
+          <span class="badge">方案验证</span>
         </div>
-      </article>
+        <h3>数据分析与业务洞察</h3>
+        <p>通过自然语言查询、指标解释和可视化报告，让业务团队更高效地使用数据。</p>
+        <div class="tag-row"><span>数据分析</span><span>可视化</span><span>BI</span></div>
+      </a>
     </div>
   </section>
 
   <section class="summary-grid">
     <div class="home-list">
-      <div class="section-head">
-        <h2 class="section-title">最新文章</h2>
-        <a href="/archives/">查看全部文章 →</a>
+      <div class="section-head compact">
+        <div>
+          <span class="section-eyebrow">LATEST WRITING</span>
+          <h2 class="section-title">最新文章</h2>
+        </div>
+        <a href="/archives/">查看全部 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
-      <a class="home-list-item" href="/posts/ai-consulting-companion/">
-        <div class="home-list-thumb" style="background: linear-gradient(135deg, #dbeafe, #eff6ff);"></div>
-        <div class="home-list-meta">
-          <h4>AI 技术分享与企业陪跑</h4>
-          <p>把主页内容整理成适合企业读者的表达方式，聚焦方案、案例和合作路径。</p>
-        </div>
-        <div class="home-list-info">首页</div>
-      </a>
       <a class="home-list-item" href="/posts/live-well/">
-        <div class="home-list-thumb" style="background: linear-gradient(135deg, #ecfeff, #eff6ff);"></div>
+        <span class="home-list-thumb thumb-blue"><i class="fa fa-compass" aria-hidden="true"></i></span>
         <div class="home-list-meta">
+          <span class="article-category">企业 AI · 方案判断</span>
           <h4>企业做 AI 落地，先别急着选模型</h4>
-          <p>先看场景、流程、数据和验证标准，再考虑模型和工具选择。</p>
+          <p>先看场景、流程、数据和验证标准，再考虑模型与工具选择。</p>
         </div>
-        <div class="home-list-info">方案</div>
+        <span class="home-list-info">6 分钟</span>
+      </a>
+      <a class="home-list-item" href="/posts/ai-consulting-companion/">
+        <span class="home-list-thumb thumb-violet"><i class="fa fa-people-group" aria-hidden="true"></i></span>
+        <div class="home-list-meta">
+          <span class="article-category">咨询陪跑 · 实践</span>
+          <h4>AI 技术分享与企业陪跑</h4>
+          <p>聚焦方案、案例和合作路径，把复杂技术转化成团队可执行的步骤。</p>
+        </div>
+        <span class="home-list-info">5 分钟</span>
       </a>
       <a class="home-list-item" href="/posts/life-as-a-company/">
-        <div class="home-list-thumb" style="background: linear-gradient(135deg, #fce7f3, #fff7ed);"></div>
+        <span class="home-list-thumb thumb-cyan"><i class="fa fa-file-lines" aria-hidden="true"></i></span>
         <div class="home-list-meta">
+          <span class="article-category">内容方法 · 沟通</span>
           <h4>AI 方案分享，怎么写给企业团队看</h4>
-          <p>从企业读者的视角组织内容，重点是判断、路径和下一步动作。</p>
+          <p>从企业读者视角组织内容，突出判断依据、实施路径和下一步动作。</p>
         </div>
-        <div class="home-list-info">内容</div>
+        <span class="home-list-info">7 分钟</span>
       </a>
     </div>
 
     <aside class="home-author">
-      <div class="section-head">
-        <h2 class="section-title">关于作者</h2>
-      </div>
+      <span class="author-welcome">欢迎光临</span>
       <div class="author-head">
-        <img src="/images/avatar.gif" alt="随风">
+        <img src="/images/avatar.gif" alt="随风" width="64" height="64" loading="lazy" decoding="async">
         <div>
           <p class="author-name">随风</p>
-          <span class="author-role">AI 工程师 / 咨询陪跑</span>
+          <span class="author-role">AI 工程师 · 企业咨询陪跑</span>
         </div>
       </div>
-      <p class="author-text">专注 AI 应用落地、技术方案梳理和企业协作。擅长把复杂问题拆成可执行的步骤，并帮助团队做更稳妥的决策。</p>
+      <p class="author-text">持续分享 AI 应用落地、技术方案与真实项目中的判断。帮助团队少走弯路，更快找到值得验证的方向。</p>
       <div class="author-stats">
-        <div class="author-stat"><strong>3</strong><span>文章</span></div>
-        <div class="author-stat"><strong>2</strong><span>方向</span></div>
-        <div class="author-stat"><strong>2</strong><span>页面</span></div>
-        <div class="author-stat"><strong>∞</strong><span>更新中</span></div>
+        <div class="author-stat"><strong>AI</strong><span>技术分享</span></div>
+        <div class="author-stat"><strong>3</strong><span>方案方向</span></div>
+        <div class="author-stat"><strong>1v1</strong><span>咨询陪跑</span></div>
       </div>
       <div class="author-links">
         <a href="https://github.com/fengcj717" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="mailto:fengcj717@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
         <a href="/atom.xml" aria-label="RSS"><i class="fa fa-rss"></i></a>
       </div>
-      <div class="author-cta">
-        <a class="btn" href="/about/">了解更多 →</a>
-      </div>
+      <a class="author-cta" href="/about/">了解我与合作方式 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </aside>
   </section>
 </section>
