@@ -4,6 +4,8 @@ darkmode: false
 minify: true
 
 custom_file_path:
+  head: source/_data/head.njk
+  header: source/_data/header.njk
   style: source/_data/styles.styl
 
 favicon:
@@ -21,11 +23,12 @@ footer:
 
 menu:
   home: / || fa fa-home
-  服务: /services/ || fa fa-briefcase
+  方案: /services/ || fa fa-briefcase
   案例: /cases/ || fa fa-diagram-project
-  about: /about/ || fa fa-user
-  archives: /archives/ || fa fa-archive
-  RSS: /atom.xml || fa fa-rss
+  工具: /tags/ || fa fa-wrench
+  文章: /archives/ || fa fa-archive
+  关于: /about/ || fa fa-user
+  订阅: /atom.xml || fa fa-rss
 
 avatar:
   url: /images/avatar.gif
