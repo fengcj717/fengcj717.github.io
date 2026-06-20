@@ -2,4 +2,12 @@
 <script>
   document.documentElement.classList.add('page-home');
 </script>
+{%- elif page.path == 'services/index.html' %}
+<script>
+  document.documentElement.classList.add('page-landing', 'page-services');
+</script>
+{%- elif page.path == 'cases/index.html' %}
+<script>
+  document.documentElement.classList.add('page-landing', 'page-cases');
+</script>
 {%- endif %}

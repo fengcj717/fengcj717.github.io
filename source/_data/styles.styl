@@ -793,3 +793,637 @@ header.header
 
   .author-stats
     grid-template-columns: repeat(3, 1fr)
+
+// Unified landing pages: services and cases
+.page-landing .main
+  display: block
+  max-width: 1240px
+  padding-top: 12px
+  width: calc(100% - 24px)
+
+.page-landing .column
+  width: 100%
+
+.page-landing header.header
+  background: transparent
+  border: 0
+  box-shadow: none
+  display: grid
+  grid-template-columns: auto 1fr
+  width: 100%
+
+.page-landing .site-brand-container
+  background: #ffffff
+  border: 1px solid var(--home-border)
+  border-radius: 16px 0 0 16px
+  border-right: 0
+  min-height: 66px
+  padding: 9px 18px
+
+.page-landing .site-nav
+  align-items: center
+  background: #ffffff
+  border: 1px solid var(--home-border)
+  border-left: 0
+  border-radius: 0 16px 16px 0
+  display: flex
+  justify-content: flex-end
+  min-height: 66px
+
+.page-landing .site-nav .menu
+  align-items: center
+  display: flex
+  flex-wrap: nowrap
+  justify-content: flex-end
+  margin: 0
+  padding: 0 12px
+  width: 100%
+
+.page-landing .site-nav .menu-item
+  margin: 0
+
+.page-landing .sidebar,
+.page-landing .sidebar-toggle
+  display: none
+
+.page-landing .main-inner
+  background: transparent
+  border: 0
+  box-shadow: none
+  margin-top: 12px
+  padding: 0
+  width: 100%
+
+.page-landing .post-block,
+.page-landing .post-block:first-of-type
+  margin: 0
+  padding: 0
+
+.page-landing .post-header,
+.page-landing .post-footer
+  display: none
+
+.page-landing .post-body
+  color: #4f596b
+  font-size: 1em
+
+.landing-page
+  display: grid
+  gap: 16px
+
+.landing-hero
+  background: #ffffff
+  border: 1px solid var(--home-border)
+  border-radius: 20px
+  box-shadow: var(--home-shadow)
+  display: grid
+  grid-template-columns: 1.25fr .75fr
+  min-height: 390px
+  overflow: hidden
+
+.landing-hero-copy
+  align-content: center
+  display: grid
+  padding: 48px
+
+.landing-kicker,
+.landing-eyebrow
+  color: #345cf6
+  font-size: .68rem
+  font-weight: 800
+  letter-spacing: .14em
+
+.landing-hero h1
+  color: #171d2b
+  font-size: clamp(2.35rem, 4vw, 3.7rem)
+  font-weight: 800
+  letter-spacing: -.055em
+  line-height: 1.12
+  margin: 13px 0 0
+
+.landing-hero-copy > p
+  color: #626d80
+  font-size: .98rem
+  line-height: 1.85
+  margin: 18px 0 0
+  max-width: 630px
+
+.landing-actions
+  display: flex
+  flex-wrap: wrap
+  gap: 10px
+  margin-top: 24px
+
+.landing-btn
+  align-items: center
+  border: 1px solid transparent
+  border-radius: 11px
+  display: inline-flex
+  font-size: .86rem
+  font-weight: 750
+  gap: 8px
+  justify-content: center
+  min-height: 42px
+  padding: 0 17px
+
+.landing-btn.primary
+  background: #345cf6
+  box-shadow: 0 8px 18px rgba(52, 92, 246, .2)
+  color: #ffffff
+
+.landing-btn.primary:hover
+  background: #2447cf
+  color: #ffffff
+
+.landing-btn.secondary
+  background: #ffffff
+  border-color: #dfe3eb
+  color: #3b4557
+
+.landing-btn.secondary:hover
+  border-color: #cbd5ff
+  color: #345cf6
+
+.landing-hero-panel
+  align-content: center
+  background: #3158e8
+  color: #ffffff
+  display: grid
+  padding: 42px
+
+.landing-panel-label
+  background: rgba(255, 255, 255, .13)
+  border-radius: 999px
+  font-size: .7rem
+  justify-self: start
+  padding: 5px 9px
+
+.landing-hero-panel > strong
+  color: #ffffff
+  font-size: 1.55rem
+  line-height: 1.35
+  margin-top: 20px
+
+.landing-hero-panel > p
+  color: rgba(255, 255, 255, .8)
+  font-size: .86rem
+  line-height: 1.7
+  margin: 12px 0 0
+
+.landing-panel-points
+  display: grid
+  gap: 9px
+  margin-top: 24px
+
+.landing-panel-points span
+  color: rgba(255, 255, 255, .88)
+  font-size: .8rem
+
+.landing-panel-points i
+  margin-right: 6px
+
+.landing-section
+  background: #ffffff
+  border: 1px solid var(--home-border)
+  border-radius: 18px
+  box-shadow: var(--home-shadow)
+  padding: 24px
+
+.landing-section-head
+  align-items: flex-end
+  display: flex
+  gap: 30px
+  justify-content: space-between
+  margin-bottom: 18px
+
+.landing-section-head h2,
+.landing-cta h2
+  color: #20283a
+  font-size: 1.35rem
+  letter-spacing: -.025em
+  margin: 4px 0 0
+
+.landing-section-head > p
+  color: #8790a0
+  font-size: .76rem
+  margin: 0
+  max-width: 420px
+  text-align: right
+
+.service-card-grid
+  display: grid
+  gap: 12px
+  grid-template-columns: repeat(3, 1fr)
+
+.service-card
+  border: 1px solid transparent
+  border-radius: 16px
+  display: flex
+  flex-direction: column
+  min-height: 360px
+  padding: 20px
+
+.service-blue
+  background: #eef3ff
+  border-color: #dce6ff
+
+.service-violet
+  background: #f3efff
+  border-color: #e8defe
+
+.service-cyan
+  background: #ebf9f7
+  border-color: #d8f0eb
+
+.service-card-head
+  align-items: center
+  display: flex
+  justify-content: space-between
+
+.landing-icon
+  align-items: center
+  background: #ffffff
+  border-radius: 12px
+  box-shadow: 0 7px 18px rgba(34, 49, 84, .08)
+  color: #345cf6
+  display: inline-flex
+  font-size: 1.05rem
+  height: 42px
+  justify-content: center
+  width: 42px
+
+.service-violet .landing-icon,
+.cover-violet .landing-icon
+  color: #8256dc
+
+.service-cyan .landing-icon,
+.cover-cyan .landing-icon
+  color: #1f9f83
+
+.landing-icon.large
+  font-size: 1.2rem
+  height: 48px
+  width: 48px
+
+.landing-badge
+  background: rgba(255, 255, 255, .76)
+  border-radius: 8px
+  color: #697386
+  font-size: .67rem
+  font-weight: 700
+  padding: 5px 8px
+
+.service-card h3
+  color: #20283a
+  font-size: 1.1rem
+  margin: 22px 0 8px
+
+.service-card > p
+  color: #697386
+  font-size: .8rem
+  line-height: 1.7
+  margin: 0
+
+.service-card ul
+  color: #4f596b
+  font-size: .78rem
+  line-height: 1.8
+  margin: 16px 0
+  padding-left: 20px
+
+.service-card li
+  margin: 2px 0
+
+.service-deliverable
+  background: rgba(255, 255, 255, .7)
+  border-radius: 9px
+  color: #5f697b
+  font-size: .7rem
+  margin-top: auto
+  padding: 9px 10px
+
+.process-grid
+  display: grid
+  gap: 10px
+  grid-template-columns: repeat(4, 1fr)
+
+.process-item
+  border-left: 2px solid #dfe5f4
+  padding: 8px 14px
+
+.process-item > span
+  color: #345cf6
+  display: block
+  font-size: .66rem
+  font-weight: 800
+
+.process-item strong
+  color: #273142
+  display: block
+  font-size: .9rem
+  margin-top: 6px
+
+.process-item p
+  color: #7a8495
+  font-size: .72rem
+  line-height: 1.55
+  margin: 6px 0 0
+
+.landing-cta
+  align-items: center
+  background: #3158e8
+  border-radius: 18px
+  box-shadow: 0 12px 30px rgba(49, 88, 232, .18)
+  color: #ffffff
+  display: flex
+  justify-content: space-between
+  padding: 28px 32px
+
+.landing-cta .landing-eyebrow
+  color: rgba(255, 255, 255, .65)
+
+.landing-cta h2
+  color: #ffffff
+
+.landing-cta p
+  color: rgba(255, 255, 255, .76)
+  font-size: .78rem
+  margin: 8px 0 0
+
+.landing-btn.light
+  background: #ffffff
+  color: #3158e8
+  flex: 0 0 auto
+
+.landing-btn.light:hover
+  color: #2447cf
+
+.case-principle
+  background: #202c4f
+
+.principle-list
+  display: grid
+  gap: 16px
+  margin-top: 22px
+
+.principle-list > div
+  align-items: start
+  border-top: 1px solid rgba(255, 255, 255, .12)
+  display: grid
+  gap: 12px
+  grid-template-columns: 28px 1fr
+  padding-top: 14px
+
+.principle-list > div:first-child
+  border-top: 0
+  padding-top: 0
+
+.principle-list span
+  color: #91a8ff
+  font-size: .68rem
+  font-weight: 800
+
+.principle-list p
+  color: rgba(255, 255, 255, .72)
+  font-size: .75rem
+  line-height: 1.6
+  margin: 0
+
+.principle-list strong
+  color: #ffffff
+  display: block
+  font-size: .84rem
+  margin-bottom: 2px
+
+.case-grid
+  display: grid
+  gap: 12px
+  grid-template-columns: repeat(3, 1fr)
+
+.case-card
+  border: 1px solid #e5e8ef
+  border-radius: 16px
+  overflow: hidden
+  transition: box-shadow .22s ease, transform .22s ease
+
+.case-card:hover
+  box-shadow: 0 12px 28px rgba(41, 55, 88, .09)
+  transform: translateY(-3px)
+
+.case-card-cover
+  align-items: center
+  display: flex
+  gap: 14px
+  min-height: 112px
+  padding: 18px
+
+.cover-blue
+  background: #eef3ff
+
+.cover-violet
+  background: #f3efff
+
+.cover-cyan
+  background: #ebf9f7
+
+.case-card-cover > div
+  display: grid
+
+.case-card-cover div > span
+  color: #8b95a6
+  font-size: .62rem
+  font-weight: 800
+  letter-spacing: .12em
+
+.case-card-cover strong
+  color: #20283a
+  font-size: .98rem
+  margin-top: 4px
+
+.case-card-body
+  padding: 18px
+
+.case-detail
+  margin-bottom: 14px
+
+.case-detail > span
+  color: #345cf6
+  display: block
+  font-size: .67rem
+  font-weight: 750
+  margin-bottom: 4px
+
+.case-detail p
+  color: #667085
+  font-size: .76rem
+  line-height: 1.65
+  margin: 0
+
+.case-result
+  align-items: flex-start
+  background: #f5f7fb
+  border-radius: 9px
+  color: #667085
+  display: flex
+  font-size: .68rem
+  gap: 7px
+  line-height: 1.55
+  padding: 9px
+
+.case-result i
+  color: #345cf6
+  margin-top: 2px
+
+.case-tags
+  display: flex
+  flex-wrap: wrap
+  gap: 5px
+  margin-top: 13px
+
+.case-tags span
+  border: 1px solid #e4e8ef
+  border-radius: 7px
+  color: #778195
+  font-size: .63rem
+  padding: 3px 6px
+
+.method-layout
+  display: grid
+  gap: 20px
+  grid-template-columns: .72fr 1.28fr
+
+.method-intro
+  background: #eef3ff
+  border-radius: 14px
+  padding: 20px
+
+.method-intro h3
+  color: #20283a
+  font-size: 1rem
+  margin: 18px 0 8px
+
+.method-intro p
+  color: #697386
+  font-size: .76rem
+  line-height: 1.65
+  margin: 0
+
+.method-steps
+  display: grid
+  gap: 8px
+  grid-template-columns: repeat(2, 1fr)
+
+.method-steps > div
+  align-items: start
+  border: 1px solid #e6e9f0
+  border-radius: 12px
+  display: grid
+  gap: 10px
+  grid-template-columns: 28px 1fr
+  padding: 14px
+
+.method-steps span
+  align-items: center
+  background: #345cf6
+  border-radius: 8px
+  color: #ffffff
+  display: inline-flex
+  font-size: .68rem
+  height: 28px
+  justify-content: center
+  width: 28px
+
+.method-steps p
+  color: #768092
+  font-size: .71rem
+  line-height: 1.55
+  margin: 0
+
+.method-steps strong
+  color: #273142
+  display: block
+  font-size: .8rem
+  margin-bottom: 2px
+
+@media (max-width: 900px)
+  .landing-hero,
+  .method-layout
+    grid-template-columns: 1fr
+
+  .landing-hero-panel
+    min-height: 300px
+
+  .service-card-grid,
+  .case-grid
+    grid-template-columns: 1fr
+
+  .service-card
+    min-height: auto
+
+  .process-grid
+    grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 767px)
+  .page-landing .main
+    width: calc(100% - 16px)
+
+  .page-landing header.header
+    display: block
+
+  .page-landing .site-brand-container
+    border-radius: 14px
+    border-right: 1px solid var(--home-border)
+
+  .page-landing .site-nav
+    border: 0
+    border-radius: 14px
+    display: block
+    height: 0
+    margin: 0
+    min-height: 0
+    overflow: hidden
+    visibility: hidden
+
+  .page-landing .site-nav .menu
+    display: block
+    padding: 8px
+
+  body.site-nav-on .page-landing .site-nav
+    border: 1px solid var(--home-border)
+    height: var(--scroll-height)
+    margin-top: 8px
+    visibility: unset
+
+  .landing-hero-copy,
+  .landing-hero-panel
+    padding: 28px 22px
+
+  .landing-hero h1
+    font-size: 2.3rem
+
+  .landing-hero-panel
+    min-height: 270px
+
+  .landing-section
+    padding: 18px
+
+  .landing-section-head
+    align-items: flex-start
+    display: grid
+    gap: 8px
+
+  .landing-section-head > p
+    text-align: left
+
+  .process-grid,
+  .method-steps
+    grid-template-columns: 1fr
+
+  .landing-cta
+    align-items: flex-start
+    display: grid
+    gap: 20px
+    padding: 24px 20px
+
+  .landing-btn.light
+    justify-self: stretch
