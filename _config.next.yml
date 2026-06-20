@@ -3,6 +3,9 @@ scheme: Pisces
 darkmode: false
 minify: true
 
+custom_file_path:
+  style: source/_data/styles.styl
+
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png
@@ -18,10 +21,10 @@ footer:
 
 menu:
   home: / || fa fa-home
-  archives: /archives/ || fa fa-archive
-  categories: /categories/ || fa fa-th
-  tags: /tags/ || fa fa-tags
+  服务: /services/ || fa fa-briefcase
+  案例: /cases/ || fa fa-diagram-project
   about: /about/ || fa fa-user
+  archives: /archives/ || fa fa-archive
   RSS: /atom.xml || fa fa-rss
 
 avatar:
