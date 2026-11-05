@@ -1,13 +1,10 @@
-{%- if page.path == 'index.html' %}
+{%- if page.path in ['index.html', 'services/index.html', 'cases/index.html', 'about/index.html'] %}
 <script>
-  document.documentElement.classList.add('page-home');
+  document.documentElement.classList.add('company-page'{%- if page.path == 'index.html' %}, 'company-home-page'{%- endif %});
 </script>
-{%- elif page.path == 'services/index.html' %}
-<script>
-  document.documentElement.classList.add('page-landing', 'page-services');
-</script>
-{%- elif page.path == 'cases/index.html' %}
-<script>
-  document.documentElement.classList.add('page-landing', 'page-cases');
-</script>
+<link rel="stylesheet" href="/enterprise/site.css">
+<link rel="icon" type="image/svg+xml" sizes="any" href="/enterprise/mark.svg">
+{%- if page.path == 'cases/index.html' %}
+<script type="module" src="/enterprise/invoice-demo.js"></script>
+{%- endif %}
 {%- endif %}

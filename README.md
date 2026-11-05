@@ -1,6 +1,6 @@
-# 随风的数字花园
+# 智定行
 
-这是 [blackfeng.cn](https://blackfeng.cn) 的 Hexo 源码仓库。
+这是 [blackfeng.cn](https://blackfeng.cn) 的 Hexo 源码仓库，包含智定行的企业 AI 服务官网和技术文章。
 
 ## 本地预览
 

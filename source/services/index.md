@@ -1,107 +1,67 @@
 ---
-title: 方案
+title: 企业 AI 解决方案
+description: 数据治理、企业知识库、智能单据、客服与售后、AI 数据开发和企业 Agent 的实施与试点。
 date: 2026-06-20 09:20:00
 comments: false
 ---
 
-<div class="landing-page services-page">
-  <section class="landing-hero">
-    <div class="landing-hero-copy">
-      <span class="landing-kicker">ENTERPRISE AI SERVICES</span>
-      <h1>从模糊想法到<br>可验证的 AI 方案</h1>
-      <p>不急着堆模型和工具，先把业务目标、使用场景、数据条件与验证标准说清楚，再决定最值得投入的下一步。</p>
-      <div class="landing-actions">
-        <a class="landing-btn primary" href="mailto:fengcj717@gmail.com?subject=AI%20咨询沟通">预约一次沟通 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        <a class="landing-btn secondary" href="/cases/">查看场景案例</a>
-      </div>
-    </div>
-    <div class="landing-hero-panel" aria-label="服务特点">
-      <span class="landing-panel-label">合作原则</span>
-      <strong>先判断价值，再设计方案</strong>
-      <p>用小步验证替代大投入，用清晰边界降低团队试错成本。</p>
-      <div class="landing-panel-points">
-        <span><i class="fa fa-circle-check" aria-hidden="true"></i> 业务视角</span>
-        <span><i class="fa fa-circle-check" aria-hidden="true"></i> 快速验证</span>
-        <span><i class="fa fa-circle-check" aria-hidden="true"></i> 可执行交付</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="landing-section">
-    <div class="landing-section-head">
-      <div>
-        <span class="landing-eyebrow">COLLABORATION</span>
-        <h2>三种合作方式</h2>
-      </div>
-      <p>根据团队所处阶段选择，不强行套用固定方案。</p>
-    </div>
-    <div class="service-card-grid">
-      <article class="service-card service-blue">
-        <div class="service-card-head">
-          <span class="landing-icon"><i class="fa fa-compass" aria-hidden="true"></i></span>
-          <span class="landing-badge">方向判断</span>
-        </div>
-        <h3>AI 咨询诊断</h3>
-        <p>适合仍在判断要不要做、先做哪一步，以及怎样控制风险的团队。</p>
-        <ul>
-          <li>业务场景与痛点梳理</li>
-          <li>机会优先级判断</li>
-          <li>试点建议与风险边界</li>
-        </ul>
-        <span class="service-deliverable">交付：诊断结论与行动建议</span>
-      </article>
-      <article class="service-card service-violet">
-        <div class="service-card-head">
-          <span class="landing-icon"><i class="fa fa-pen-ruler" aria-hidden="true"></i></span>
-          <span class="landing-badge">方案设计</span>
-        </div>
-        <h3>方案共创</h3>
-        <p>适合已经有初步方向，需要把想法整理成可评审、可推进方案的团队。</p>
-        <ul>
-          <li>业务目标与角色对齐</li>
-          <li>流程、数据和权限设计</li>
-          <li>技术路径与推进节奏</li>
-        </ul>
-        <span class="service-deliverable">交付：方案蓝图与实施路线</span>
-      </article>
-      <article class="service-card service-cyan">
-        <div class="service-card-head">
-          <span class="landing-icon"><i class="fa fa-rocket" aria-hidden="true"></i></span>
-          <span class="landing-badge">试点落地</span>
-        </div>
-        <h3>陪跑试点</h3>
-        <p>适合已经准备启动 PoC，希望有人共同推进、复盘并持续校准的团队。</p>
-        <ul>
-          <li>PoC 范围与成功标准</li>
-          <li>试运行与问题复盘</li>
-          <li>团队协作与迭代建议</li>
-        </ul>
-        <span class="service-deliverable">交付：可验证试点与复盘报告</span>
-      </article>
-    </div>
-  </section>
-
-  <section class="landing-section process-section">
-    <div class="landing-section-head">
-      <div>
-        <span class="landing-eyebrow">WORKING PROCESS</span>
-        <h2>合作如何推进</h2>
-      </div>
-    </div>
-    <div class="process-grid">
-      <div class="process-item"><span>01</span><strong>理解现状</strong><p>对齐业务目标、团队条件和真实限制。</p></div>
-      <div class="process-item"><span>02</span><strong>选择场景</strong><p>筛选价值明确、数据可用、范围可控的切入口。</p></div>
-      <div class="process-item"><span>03</span><strong>快速验证</strong><p>用最小可行试点验证效果与使用意愿。</p></div>
-      <div class="process-item"><span>04</span><strong>复盘扩展</strong><p>基于证据决定优化、推广或及时停止。</p></div>
-    </div>
-  </section>
-
-  <section class="landing-cta">
-    <div>
-      <span class="landing-eyebrow">START SMALL, LEARN FAST</span>
-      <h2>先用一次沟通，把问题讲清楚</h2>
-      <p>你可以带着一个具体场景、现有方案或团队困惑来交流。</p>
-    </div>
-    <a class="landing-btn light" href="mailto:fengcj717@gmail.com?subject=AI%20项目沟通">联系我 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </section>
+<div class="company-content">
+<section class="company-page-intro" aria-labelledby="services-title">
+  <p class="company-kicker"><span aria-hidden="true"></span> 解决方案</p>
+  <h1 id="services-title">从一个具体的业务流程开始</h1>
+  <p class="company-lead">围绕你的现有系统、数据条件和人员分工，把一个高频流程做成可以使用、复核和验收的试点。</p>
+  <div class="company-actions">
+    <a class="company-button primary" href="/about/">讨论试点范围 <span aria-hidden="true">↗</span></a>
+    <a class="company-button secondary" href="/cases/">查看场景演示 <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+<section class="company-section service-group" id="data-knowledge" aria-labelledby="data-knowledge-title">
+  <div class="service-group-head"><p class="company-kicker">01 / 数据与知识</p><h2 id="data-knowledge-title">让数据和文档可用</h2></div>
+  <div class="service-items">
+    <article>
+      <h3>企业数据治理</h3>
+      <p>对齐不同系统里的客户、订单和经营指标，定位缺失、重复或口径不一致的数据。</p>
+      <p class="service-output"><strong>交付物</strong> 数据资产清单、指标字典、质量校验规则</p>
+    </article>
+    <article>
+      <h3>企业知识库</h3>
+      <p>让员工用自然语言查找制度、产品手册或操作规范。回答引用原文，检索遵循资料权限和有效期。</p>
+      <p class="service-output"><strong>交付物</strong> 文档目录、权限规则、问答助手与评测集</p>
+    </article>
+  </div>
+</section>
+<section class="company-section service-group" id="business-operations" aria-labelledby="business-operations-title">
+  <div class="service-group-head"><p class="company-kicker">02 / 业务流程</p><h2 id="business-operations-title">减少重复录入和转接</h2></div>
+  <div class="service-items">
+    <article>
+      <h3>智能单据与审核</h3>
+      <p>抽取票据、订单或物流单据的字段，用业务规则进行核对，把异常送到人工复核环节。</p>
+      <p class="service-output"><strong>交付物</strong> 校验流程、异常台账、业务系统接口</p>
+    </article>
+    <article>
+      <h3>客服与售后助手</h3>
+      <p>查询产品与售后知识，辅助回答常见问题，按规则转接复杂咨询并保留对话上下文。</p>
+      <p class="service-output"><strong>交付物</strong> 客服助手、工单流转和人工接管记录</p>
+    </article>
+  </div>
+</section>
+<section class="company-section service-group" id="engineering" aria-labelledby="engineering-title">
+  <div class="service-group-head"><p class="company-kicker">03 / 工程实施</p><h2 id="engineering-title">把 AI 接到开发和运营流程</h2></div>
+  <div class="service-items">
+    <article>
+      <h3>AI 数据开发</h3>
+      <p>从需求说明定位表和字段，辅助产出建模、SQL 和测试草稿，由开发人员审查后执行。</p>
+      <p class="service-output"><strong>交付物</strong> 元数据检索、开发工作流与 SQL 检查规则</p>
+    </article>
+    <article>
+      <h3>企业 Agent</h3>
+      <p>拆解一项具体任务，把知识、规则、业务 API 和审批串起来，记录每一步执行和异常。</p>
+      <p class="service-output"><strong>交付物</strong> 流程原型、系统集成方案与试点评测</p>
+    </article>
+  </div>
+</section>
+<section class="company-contact-band" aria-labelledby="services-contact-title">
+  <div><h2 id="services-contact-title">试点前先约定怎么验收</h2><p>按场景选择任务完成率、人工复核耗时、返工率和运行成本等指标。</p></div>
+  <a class="company-button light" href="/about/">沟通业务需求 <span aria-hidden="true">↗</span></a>
+</section>
 </div>

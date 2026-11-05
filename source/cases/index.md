@@ -1,106 +1,71 @@
 ---
-title: 案例
+title: 场景演示
+description: 体验模拟单据字段校验和人工复核，了解知识库问答和售后分流的实施路径。
 date: 2026-06-20 09:30:00
 comments: false
 ---
 
-<div class="landing-page cases-page">
-  <section class="landing-hero cases-hero">
-    <div class="landing-hero-copy">
-      <span class="landing-kicker">REAL-WORLD AI SCENARIOS</span>
-      <h1>不讲夸张故事，<br>只看真实场景</h1>
-      <p>案例重点不是展示用了多大的模型，而是问题是否值得解决、方案能否进入流程，以及效果能否被业务团队验证。</p>
-      <div class="landing-actions">
-        <a class="landing-btn primary" href="#case-list">浏览案例方向 <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
-        <a class="landing-btn secondary" href="/services/">了解合作方式</a>
+<div class="company-content">
+<section class="company-page-intro" aria-labelledby="scenarios-title">
+  <p class="company-kicker"><span aria-hidden="true"></span> 场景演示</p>
+  <h1 id="scenarios-title">看一项任务怎么跑完</h1>
+  <p class="company-lead">从输入、校验结果到人工处理，拆开看工作流的每一步。这里的样本和业务规则均为演示用。</p>
+</section>
+<section class="company-section demo-section" id="invoice-demo" aria-labelledby="invoice-title">
+  <div class="demo-copy">
+    <p class="company-kicker">在线演示 · 模拟数据</p>
+    <h2 id="invoice-title">单据字段校验</h2>
+    <p>财务收到单据后，系统用预置字段和订单记录做比对。你可以切换样本，观察金额不符或订单号缺失时怎样提示复核。</p>
+    <ol class="demo-checklist">
+      <li>核对单据与订单的编号</li>
+      <li>比较单据金额和订单金额</li>
+      <li>给出复核原因及处理建议</li>
+    </ol>
+  </div>
+  <div class="demo-console">
+    <form class="demo-controls" hidden>
+      <label for="demo-sample">选择模拟样本</label>
+      <div class="demo-inputs">
+        <select id="demo-sample">
+          <option value="match">样本 01 · 字段一致</option>
+          <option value="amount" selected>样本 02 · 金额不符</option>
+          <option value="missing">样本 03 · 缺订单号</option>
+        </select>
+        <button class="company-button primary" type="submit">运行校验</button>
       </div>
+    </form>
+    <noscript><p class="demo-no-script">启用 JavaScript 后可以切换样本。下面展示一份金额不符的模拟单据。</p></noscript>
+    <dl class="demo-fields">
+      <div><dt>订单编号</dt><dd id="expected-order">PO-DEMO-02</dd></div>
+      <div><dt>单据编号字段</dt><dd id="observed-order">PO-DEMO-02</dd></div>
+      <div><dt>订单金额</dt><dd id="expected-amount">¥1,080.00</dd></div>
+      <div><dt>单据金额</dt><dd id="observed-amount">¥1,180.00</dd></div>
+    </dl>
+    <div class="demo-result" aria-live="polite" aria-atomic="true">
+      <strong class="company-status neutral" id="demo-status">待校验</strong>
+      <p id="demo-summary">运行校验后查看处理建议。</p>
     </div>
-    <div class="landing-hero-panel case-principle" aria-label="案例判断标准">
-      <span class="landing-panel-label">案例判断标准</span>
-      <div class="principle-list">
-        <div><span>01</span><p><strong>问题真实</strong>来自业务流程，而不是为了使用 AI。</p></div>
-        <div><span>02</span><p><strong>边界清晰</strong>知道 AI 能做什么，也知道何时交给人。</p></div>
-        <div><span>03</span><p><strong>结果可验</strong>提前约定准确率、时间或采用率等指标。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="landing-section" id="case-list">
-    <div class="landing-section-head">
-      <div>
-        <span class="landing-eyebrow">SELECTED SCENARIOS</span>
-        <h2>三类典型 AI 场景</h2>
-      </div>
-      <p>以下内容用于展示解决问题的方法，不虚构客户名称和收益数字。</p>
-    </div>
-    <div class="case-grid">
-      <article class="case-card">
-        <div class="case-card-cover cover-blue">
-          <span class="landing-icon large"><i class="fa fa-book-open" aria-hidden="true"></i></span>
-          <div><span>KNOWLEDGE</span><strong>企业内部知识整理</strong></div>
-        </div>
-        <div class="case-card-body">
-          <div class="case-detail"><span>常见问题</span><p>资料分散、搜索困难，新成员反复询问同样的问题。</p></div>
-          <div class="case-detail"><span>方案路径</span><p>先治理文档与权限，再建立可追溯来源的 RAG 问答入口。</p></div>
-          <div class="case-result"><i class="fa fa-bullseye" aria-hidden="true"></i><span>验证重点：命中率、引用准确性、实际使用频率</span></div>
-          <div class="case-tags"><span>RAG</span><span>知识库</span><span>权限治理</span></div>
-        </div>
-      </article>
-      <article class="case-card">
-        <div class="case-card-cover cover-violet">
-          <span class="landing-icon large"><i class="fa fa-diagram-project" aria-hidden="true"></i></span>
-          <div><span>WORKFLOW</span><strong>业务流程辅助</strong></div>
-        </div>
-        <div class="case-card-body">
-          <div class="case-detail"><span>常见问题</span><p>重复任务占用大量时间，但流程中仍存在判断和人工确认。</p></div>
-          <div class="case-detail"><span>方案路径</span><p>拆分任务节点，用智能体连接工具，并为关键动作保留人工审批。</p></div>
-          <div class="case-result"><i class="fa fa-bullseye" aria-hidden="true"></i><span>验证重点：处理时长、人工介入率、异常恢复能力</span></div>
-          <div class="case-tags"><span>Agent</span><span>自动化</span><span>Human-in-the-loop</span></div>
-        </div>
-      </article>
-      <article class="case-card">
-        <div class="case-card-cover cover-cyan">
-          <span class="landing-icon large"><i class="fa fa-file-lines" aria-hidden="true"></i></span>
-          <div><span>CONTENT</span><strong>内容与沟通辅助</strong></div>
-        </div>
-        <div class="case-card-body">
-          <div class="case-detail"><span>常见问题</span><p>会议、方案和内部说明产出频繁，信息整理成本较高。</p></div>
-          <div class="case-detail"><span>方案路径</span><p>建立结构化模板与审核机制，让 AI 完成初稿、提炼和格式转换。</p></div>
-          <div class="case-result"><i class="fa fa-bullseye" aria-hidden="true"></i><span>验证重点：产出时间、修改轮次、内容采用率</span></div>
-          <div class="case-tags"><span>内容生成</span><span>会议纪要</span><span>方案表达</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="landing-section method-section">
-    <div class="landing-section-head">
-      <div>
-        <span class="landing-eyebrow">PILOT METHOD</span>
-        <h2>试点推进方法</h2>
-      </div>
-    </div>
-    <div class="method-layout">
-      <div class="method-intro">
-        <span class="landing-icon"><i class="fa fa-flask" aria-hidden="true"></i></span>
-        <h3>把成功标准写在开发之前</h3>
-        <p>试点不是做一个漂亮演示，而是用最小成本获得继续投入所需的证据。</p>
-      </div>
-      <div class="method-steps">
-        <div><span>1</span><p><strong>定义目标</strong>明确业务问题、使用者和预期改变。</p></div>
-        <div><span>2</span><p><strong>限制范围</strong>控制数据、流程和参与人员规模。</p></div>
-        <div><span>3</span><p><strong>约定指标</strong>提前确定质量、效率和采用率指标。</p></div>
-        <div><span>4</span><p><strong>复盘决策</strong>根据证据选择扩展、调整或停止。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="landing-cta">
-    <div>
-      <span class="landing-eyebrow">YOUR SCENARIO</span>
-      <h2>有一个 AI 场景想验证？</h2>
-      <p>从问题和约束开始，我可以帮你判断是否值得做。</p>
-    </div>
-    <a class="landing-btn light" href="mailto:fengcj717@gmail.com?subject=AI%20场景评估">聊聊你的场景 <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </section>
+  </div>
+</section>
+<section class="company-section" aria-labelledby="other-scenarios-title">
+  <div class="company-section-head"><div><p class="company-kicker">方案示例</p><h2 id="other-scenarios-title">两个常见的切入口</h2></div></div>
+  <div class="company-cards company-cards-two">
+    <article class="company-card">
+      <span class="company-card-index" aria-hidden="true">01</span>
+      <h3>员工查制度</h3>
+      <p>员工询问报销条件，助手从有效制度中定位条款，返回出处。资料不足时提示补充信息或联系负责人。</p>
+      <span class="company-card-note">验证指标 · 答案正确率、引用准确率</span>
+    </article>
+    <article class="company-card">
+      <span class="company-card-index" aria-hidden="true">02</span>
+      <h3>客服处理退换货</h3>
+      <p>助手核对订单与售后政策。遇到规则冲突时，生成带判断依据的工单，由售后人员确认下一步。</p>
+      <span class="company-card-note">验证指标 · 转人工有效率、处理耗时</span>
+    </article>
+  </div>
+</section>
+<section class="company-contact-band" aria-labelledby="scenarios-contact-title">
+  <div><h2 id="scenarios-contact-title">想看看你的流程如何接入 AI？</h2><p>描述业务步骤和常见异常，就可以开始讨论演示范围。</p></div>
+  <a class="company-button light" href="/about/">沟通业务需求 <span aria-hidden="true">↗</span></a>
+</section>
 </div>

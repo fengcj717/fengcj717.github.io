@@ -19,16 +19,15 @@ footer:
     name: fa fa-heart
     animated: false
     color: "#808080"
-  powered: true
+  powered: false
+  copyright: 智定行
 
 menu:
   home: / || fa fa-home
-  方案: /services/ || fa fa-briefcase
-  案例: /cases/ || fa fa-diagram-project
-  工具: /tags/ || fa fa-wrench
-  文章: /archives/ || fa fa-archive
-  关于: /about/ || fa fa-user
-  订阅: /atom.xml || fa fa-rss
+  解决方案: /services/ || fa fa-briefcase
+  场景演示: /cases/ || fa fa-diagram-project
+  技术文章: /archives/ || fa fa-archive
+  合作联系: /about/ || fa fa-envelope
 
 avatar:
   url: /images/avatar.gif
@@ -92,7 +91,7 @@ comments:
   lazyload: false
   nav: null
 
-pjax: true
+pjax: false
 motion:
   enable: true
   async: false
